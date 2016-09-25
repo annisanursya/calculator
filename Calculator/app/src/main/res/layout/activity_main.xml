@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.annisa.calculator.MainActivity"
+    android:weightSum="1">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:onClick="tombol7click"
+        android:id="@+id/tombol7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="134dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:onClick="tombol8click"
+        android:id="@+id/tombol8"
+        android:layout_alignTop="@+id/tombol7"
+        android:layout_toRightOf="@+id/tombol7"
+        android:layout_toEndOf="@+id/tombol7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:onClick="tombol9click"
+        android:id="@+id/tombol9"
+        android:layout_alignTop="@+id/tombol8"
+        android:layout_toRightOf="@+id/tombol8"
+        android:layout_toEndOf="@+id/tombol8" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="tombolBagiclick"
+        android:text=":"
+        android:id="@+id/tombolBagi"
+        android:layout_alignTop="@+id/tombol9"
+        android:layout_toRightOf="@+id/tombol9"
+        android:layout_toEndOf="@+id/tombol9" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;"
+        android:id="@+id/hapus"
+        android:onClick="tombolHapusclick"
+        android:layout_alignTop="@+id/tombolBagi"
+        android:layout_toRightOf="@+id/tombolBagi"
+        android:layout_toEndOf="@+id/tombolBagi" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cc"
+        android:id="@+id/reset"
+        android:onClick="tombolResetclick"
+        android:layout_alignTop="@+id/hapus"
+        android:layout_toRightOf="@+id/hapus"
+        android:layout_toEndOf="@+id/hapus" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:onClick="tombol4click"
+        android:id="@+id/tombol4"
+        android:layout_below="@+id/tombol7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/tombolKali"
+        android:onClick="tombolKaliclick"
+        android:layout_alignTop="@+id/tombol4"
+        android:layout_toLeftOf="@+id/hapus"
+        android:layout_toStartOf="@+id/hapus" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/tombol5"
+        android:onClick="tombol5click"
+        android:layout_alignTop="@+id/tombol4"
+        android:layout_toRightOf="@+id/tombol4"
+        android:layout_toEndOf="@+id/tombol4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:id="@+id/tombol6"
+        android:onClick="tombol6click"
+        android:layout_alignTop="@+id/tombolKali"
+        android:layout_toRightOf="@+id/tombol5"
+        android:layout_toEndOf="@+id/tombol5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="("
+        android:id="@+id/kurungBuka"
+        android:layout_alignTop="@+id/tombolKali"
+        android:layout_toLeftOf="@+id/reset"
+        android:layout_toStartOf="@+id/reset" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=")"
+        android:id="@+id/kurungTutup"
+        android:layout_alignTop="@+id/kurungBuka"
+        android:layout_alignLeft="@+id/reset"
+        android:layout_alignStart="@+id/reset" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textAllCaps="false"
+        android:id="@+id/editText"
+        android:layout_above="@+id/tombol8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="tombol1click"
+        android:text="1"
+        android:id="@+id/tombol1"
+        android:layout_below="@+id/tombol4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:onClick="tombol2click"
+        android:id="@+id/tombol2"
+        android:layout_below="@+id/tombolKali"
+        android:layout_alignLeft="@+id/tombol5"
+        android:layout_alignStart="@+id/tombol5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:onClick="tombol3click"
+        android:id="@+id/tombol3"
+        android:layout_below="@+id/tombolKali"
+        android:layout_toRightOf="@+id/tombol2"
+        android:layout_toEndOf="@+id/tombol2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:onClick="tombolKurangclick"
+        android:id="@+id/tombolKurang"
+        android:layout_below="@+id/tombolKali"
+        android:layout_toRightOf="@+id/tombol6"
+        android:layout_toEndOf="@+id/tombol6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:onClick="tombolKuadratclick"
+        android:id="@+id/tombolKuadrat"
+        android:layout_below="@+id/kurungBuka"
+        android:layout_toRightOf="@+id/tombolKurang"
+        android:layout_toEndOf="@+id/tombolKurang" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u221"
+        android:id="@+id/tombolAkar"
+        android:onClick="tombolAkarclick"
+        android:layout_below="@+id/kurungBuka"
+        android:layout_toRightOf="@+id/tombolKuadrat"
+        android:layout_toEndOf="@+id/tombolKuadrat" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:onClick="tombol0click"
+        android:id="@+id/tombol0"
+        android:layout_below="@+id/tombol1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:id="@+id/tombolTitik"
+        android:layout_alignTop="@+id/tombol0"
+        android:layout_alignLeft="@+id/tombol2"
+        android:layout_alignStart="@+id/tombol2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:id="@+id/tombolPersen"
+        android:onClick="tombolPersenclick"
+        android:layout_alignTop="@+id/tombolTitik"
+        android:layout_toRightOf="@+id/tombolTitik"
+        android:layout_toEndOf="@+id/tombolTitik" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/tombolTambah"
+        android:onClick="tombolTambahclick"
+        android:layout_alignTop="@+id/tombolPersen"
+        android:layout_alignLeft="@+id/tombolKurang"
+        android:layout_alignStart="@+id/tombolKurang" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:onClick="tombolHasilclick"
+        android:id="@+id/tombolHasil"
+        android:layout_alignTop="@+id/tombolTambah"
+        android:layout_toRightOf="@+id/tombolTambah"
+        android:layout_alignRight="@+id/tombolAkar"
+        android:layout_alignEnd="@+id/tombolAkar" />
+
+
+</RelativeLayout>
